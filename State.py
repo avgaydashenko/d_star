@@ -45,3 +45,5 @@ class State:
     def __hash__(self):
         return self.x + 34245 * self.y
 
+    def __repr__(self):
+        return "State: {x}, {y}, ({f}, {s})".format(x=self.x, y=self.y, f=self.k.first(), s=self.k.second())
